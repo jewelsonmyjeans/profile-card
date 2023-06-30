@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(../images/bg-pattern-bottom.svg) bottom -50rem right -10rem no-repeat, url(../images/bg-pattern-top.svg) top -30rem left -15rem no-repeat;
+  background: url(./images/bg-pattern-bottom.svg) bottom -50rem right -10rem no-repeat, url(./images/bg-pattern-top.svg) top -30rem left -15rem no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
