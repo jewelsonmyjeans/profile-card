@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$font-stack: 'Kumbh Sans', sans-serif;;
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/bg-pattern-bottom.svg) bottom -50rem right -10rem no-repeat, url(../images/bg-pattern-top.svg) top -30rem left -15rem no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: $font-stack;
+    background-color: $dark-cyan;
+    font-size: 18px;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    min-width: 350px;
+    max-width: 450px;
+    margin: 4em;
+    border-radius: 15px;
+    .bg-pattern-img {
+        border-radius: 15px 15px 0 0;
+    }
+    .avatar {
+        margin-top: -3em;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+    .card-header {
+        p:first-of-type {
+            padding: 1em 0 .5em 0;
+            font-weight: 700;
+            color: $very-dark-desaturated-blue;
+        }
+        span {
+            color: $dark-grayish-blue;
+            font-weight: 400;
+        }
+        p:last-of-type {
+            color: $dark-grayish-blue;
+            font-size: .9rem;
+            padding-bottom: 2em;
+        }
+    }
+    .card-footer {
+        display: flex;
+        justify-content: space-around;
+        border-top: rgba($dark-gray, .3) 1px solid;
+        padding: 1em;
+        .status {
+            font-weight: 700;
+        }
+        .item-name {
+            color: $dark-gray;
+        }
+    }
+}
+
